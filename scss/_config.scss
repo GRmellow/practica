@@ -1,0 +1,13 @@
+$primary-color: #57c5a0;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000000;
+  } @else {
+    @return #ffffff;
+  }
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-in-out;
+}

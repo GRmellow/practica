@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login-modal-overlay">
+        <div class="login-modal">
+            <h1>Sign In</h1>
+            <h2>To continue, please enter your credentials below.</h2>
+            <form>
+                <div class="group">
+                    <input type="text" required></span><span class="bar"></span>
+                    <label>Username</label>
+                </div>
+                <div class="group">
+                    <input type="password" required></span><span class="bar"></span>
+                    <label>Password</label>
+                </div>
+
+                <button type="submit" class="button buttonBlue">Login
+                </button>
+                <button class="button buttonBlue">
+                    Register
+                </button>
+            </form>
+        </div>
+    </div>
+    <header class="header">
+        <div class="headerTop">
+            <div class="wrapper">
+                <a href="index.html" class="headerTop_logo">Fooseshoes</a>
+                <div class="headerTop_buttons">
+                    <div class="headerSearch">
+                        <form class="headerSearch_form">
+                            <label for="autocomplete"></label>
+                            <input id="autocomplete" type="text" class="headerSearch_field" placeholder="Search..."
+                                autofocus>
+                            <button class="headerSearch_button icon-search"></button>
+                        </form>
+                    </div>
+                    <a href="#" class="headerLogin openb"><span>LOGIN or REGISTER</a>
+                </div>
+            </div>
+        </div>
+        <div class="headerBottom">
+            <div class="wrapper">
+                <div class="mobile">
+                    <span></span>
+                </div>
+                <div class="mobileSearchInput icon-search"></div>
+                <nav class="nav">
+                    <ul class="nav_items">
+                        <li class="nav_item">
+                            <a href="index.html" class="nav_btn">Home</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="products.html" class="active  nav_btn">Products</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="about.html" class="nav_btn">About</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#" class="nav_btn">Pages</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="blog.html" class="nav_btn">Blog</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="contact.html" class="nav_btn">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="headerBottom_btns">
+                    <a href="#" class="headerBottom_button icon-star">
+                        <span class="fill">30</span>
+                    </a>
+                    <a href="#" class="headerBottom_button icon-cart">
+                        <span class="fill">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="top">
+            <div class="container">
+                <div class="content">
+                    <p class="content_price">$145,99</p>
+                    <h3 class="content_title">Pink Shoes<br>2013 Collection</h3>
+                    <p class="content_text">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Odio
+                        ipsa,
+                        molestias quo voluptate <br> at obcaecati laudantium quibusdam.</p>
+                </div>
+            </div>
+        </div>
+        <div class="shopBy">
+            <div class="wrapper">
+                <div class="shopBy_buttons">
+                    <button class="shopBy_button price">Price<i id="down" class="down"></i></button>
+                    <div id="myDropdown" class="dropdown-price">
+                        <a href="#">Low to high</a>
+                        <a href="#">High to low</a>
+                        <a href="#">Deals</a>
+                    </div>
+                    <button id="mybtn2" class="shopBy_button categories">Categories <i id="down" class="down"></i>
+                    </button>
+                    <div id="myDropdown2" class="dropdown-categories">
+                        <a href="#">Men</a>
+                        <a href="#">Kids</a>
+                        <a href="#">Women</a>
+                    </div>
+                    <button id="mybtn3" class="shopBy_button brands">Brands <i id="down" class="down"></i> </button>
+                    <div id="myDropdown3" class="dropdown-brands">
+                        <a href="#">Even&Odd</a>
+                        <a href="#">Buffalo&Decolleté</a>
+                        <a href="#">Prada</a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <h1> Shop By</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="allProducts">
+            <div class="wrapper">
+                <div class="allProducts_text">
+
+                    <a class="allProducts_sort" href="#">Sort alphabetically</a>
+
+                    <div class="allProducts_buttons">
+                        <button class="allProducts_gridView icon-grid"></button>
+                        <button class="allProducts_listView icon-list"></button>
+                    </div>
+                    <p class="allProducts_gridText">View as</p>
+                    <p class="allProducts_heading">All Products <small id="nav">Home </small><small>All Products</small>
+                    </p>
+
+                </div>
+                <div class="allProducts_grid">
+                    <div class="allProducts_item">
+                        <img class="allProducts_item_image" src="img/images/bestSellers_1.png" alt="bestSellers_1.png">
+                        <div class="allProducts_item_info">
+                            <div class="allProducts_item_price">$145,99</div>
+                            <p class="allProducts_item_title">Even&Odd</p>
+                            <div class="allProducts_item_buttons">
+                                <a href="#" class="allProducts_item_button icon-eye"></a>
+                                <a href="#" class="allProducts_item_button icon-star"></a>
+                                <a href="#" class="allProducts_item_button icon-share"></a>
+                                <a href="#" class="allProducts_item_button icon-buy"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allProducts_item">
+                        <img class="allProducts_item_image" src="img/images/newArrivals_1.jpg" alt="newArrivals_1.png">
+                        <div class="allProducts_item_info">
+                            <div class="allProducts_item_price">$145,99</div>
+                            <p class="allProducts_item_title">Even&Odd</p>
+                            <p class="allProducts_item_badge">ON SALE!</p>
+                            <div class="allProducts_item_buttons">
+                                <a href="#" class="allProducts_item_button icon-eye"></a>
+                                <a href="#" class="allProducts_item_button icon-star"></a>
+                                <a href="#" class="allProducts_item_button icon-share"></a>
+                                <a href="#" class="allProducts_item_button icon-buy"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allProducts_item">
+                        <img class="allProducts_item_image" src="img/images/bestSellers_1.png" alt="bestSellers_1.png">
+                        <div class="allProducts_item_info">
+                            <div class="allProducts_item_price">$145,99</div>
+                            <p class="allProducts_item_title">Buffalo&Decolleté</p>
+                            <div class="allProducts_item_buttons">
+                                <a href="#" class="allProducts_item_button icon-eye"></a>
+                                <a href="#" class="allProducts_item_button icon-star"></a>
+                                <a href="#" class="allProducts_item_button icon-share"></a>
+                                <a href="#" class="allProducts_item_button icon-buy"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allProducts_item">
+                        <img class="allProducts_item_image" src="img/images/newArrivals_1.jpg" alt="newArrivals_1.png">
+                        <div class="allProducts_item_info">
+                            <div class="allProducts_item_price">$145,99</div>
+                            <p class="allProducts_item_title">Even&Odd</p>
+                            <div class="allProducts_item_buttons">
+                                <a href="#" class="allProducts_item_button icon-eye"></a>
+                                <a href="#" class="allProducts_item_button icon-star"></a>
+                                <a href="#" class="allProducts_item_button icon-share"></a>
+                                <a href="#" class="allProducts_item_button icon-buy"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allProducts_item">
+                        <img class="allProducts_item_image" src="img/images/bestSellers_1.png" alt="bestSellers_1.png">
+                        <div class="allProducts_item_info">
+                            <div class="allProducts_item_price">$145,99</div>
+                            <p class="allProducts_item_title">Buffalo&Decolleté</p>
+                            <div class="allProducts_item_buttons">
+                                <a href="#" class="allProducts_item_button icon-eye"></a>
+                                <a href="#" class="allProducts_item_button icon-star"></a>
+                                <a href="#" class="allProducts_item_button icon-share"></a>
+                                <a href="#" class="allProducts_item_button icon-buy"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allProducts_item">
+                        <img class="allProducts_item_image" src="img/images/newArrivals_1.jpg" alt="newArrivals_1.png">
+                        <div class="allProducts_item_info">
+                            <div class="allProducts_item_price">$145,99</div>
+                            <p class="allProducts_item_title">Even&Odd</p>
+                            <p class="allProducts_item_badgeSec">OUT OF <br> STOCK</p>
+                            <div class="allProducts_item_buttons">
+                                <a href="#" class="allProducts_item_button icon-eye"></a>
+                                <a href="#" class="allProducts_item_button icon-star"></a>
+                                <a href="#" class="allProducts_item_button icon-share"></a>
+                                <a href="#" class="allProducts_item_button icon-buy"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allProducts_item">
+                        <img class="allProducts_item_image" src="img/images/bestSellers_1.png" alt="bestSellers_1.png">
+                        <div class="allProducts_item_info">
+                            <div class="allProducts_item_price">$145,99</div>
+                            <p class="allProducts_item_title">Buffalo&Decolleté</p>
+                            <div class="allProducts_item_buttons">
+                                <a href="#" class="allProducts_item_button icon-eye"></a>
+                                <a href="#" class="allProducts_item_button icon-star"></a>
+                                <a href="#" class="allProducts_item_button icon-share"></a>
+                                <a href="#" class="allProducts_item_button icon-buy"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allProducts_item">
+                        <img class="allProducts_item_image" src="img/images/newArrivals_1.jpg" alt="newArrivals_1.png">
+                        <div class="allProducts_item_info">
+                            <div class="allProducts_item_price">$145,99</div>
+                            <p class="allProducts_item_title">Even&Odd</p>
+                            <p class="allProducts_item_badge">ON SALE!</p>
+                            <div class="allProducts_item_buttons">
+                                <a href="#" class="allProducts_item_button icon-eye"></a>
+                                <a href="#" class="allProducts_item_button icon-star"></a>
+                                <a href="#" class="allProducts_item_button icon-share"></a>
+                                <a href="#" class="allProducts_item_button icon-buy"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="allProducts_item">
+                        <img class="allProducts_item_image" src="img/images/bestSellers_1.png" alt="bestSellers_1.png">
+                        <div class="allProducts_item_info">
+                            <div class="allProducts_item_price">$145,99</div>
+                            <p class="allProducts_item_title">Even&Odd</p>
+                            <div class="allProducts_item_buttons">
+                                <a href="#" class="allProducts_item_button icon-eye"></a>
+                                <a href="#" class="allProducts_item_button icon-star"></a>
+                                <a href="#" class="allProducts_item_button icon-share"></a>
+                                <a href="#" class="allProducts_item_button icon-buy"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="addon">
+                <div class="wrapper">
+                    <div class="grid">
+                        <div class="addon_item shipping">
+                            <h5 class="addon_item_title">FREE SHIPPING</h5>
+                            <p class="addon_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Pariatur animi optio dolores sit, facilis officiis.</p>
+                        </div>
+                        <div class="addon_item">
+                            <h5 class="addon_item_title">TESTIMONIALS</h5>
+                            <p class="addon_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Pariatur animi optio dolores sit, facilis officiis.</p>
+                        </div>
+                        <div class="addon_item addon_item_blog">
+                            <h5 class="addon_item_title">BLOG NEWS</h5>
+                            <div class="news-blog">
+                                <div class="news">
+                                    <span class="addon_item_date">APR <br> 01</span>
+                                    <h5 class="addon_item_text">Nice & clean. The best for your blog!</h5>
+                                    <p class="addon_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Nam, ea.</p>
+                                    <span class="addon_item_date">APR <br> 01</span>
+                                    <h5 class="addon_item_text">Hello World</h5>
+                                    <p class="addon_item_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Nam, ea.</p>
+                                </div>
+                                <div class="news">
+                                    <span class="addon_item_date">APR <br> 01</span>
+                                    <h5 class="addon_item_text">What an eCommennce theme!</h5>
+                                    <p class="addon_item_text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Ab, architecto.</p>
+                                    <span class="addon_item_date">APR <br> 01</span>
+                                    <h5 class="addon_item_text">Goodbye World</h5>
+                                    <p class="addon_item_text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Ab, architecto.</p>
+                                </div>
+                                <div class="news">
+                                    <span class="addon_item_date">APR <br> 03</span>
+                                    <h5 class="addon_item_text">Check this out!</h5>
+                                    <p class="addon_item_text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Ab, architecto.</p>
+                                    <span class="addon_item_date">APR <br> 03</span>
+                                    <h5 class="addon_item_text">Something new exciting!</h5>
+                                    <p class="addon_item_text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. Ab, architecto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerHead">
+            <div class="wrapper">
+                <div class="grid">
+                    <div class="footerHead_item">
+                        <h5 class="footerHead_item_title">TEXT WIDGET</h5>
+                        <p class="footerHead_item_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Necessitatibus labore, doloremque aut eaque a ipsum quidem voluptatem voluptates! Quam,
+                            deserunt iste laborum quod vero adipisci dolores a nihil laboriosam cum excepturi, delectus
+                            distinctio veritatis magnam!</p>
+                    </div>
+                    <div class="footerHead_item twitterWdiget widget">
+                        <h5 class="footerHead_item_title twitterWidget">TWITTER WIDGET</h5>
+                        <a class="twitter-timeline" data-chrome="nofooter noborders noscrollbar no header transparent"
+                            data-theme="dark" data-link-color="#57c5a0" data-width="220" data-height="150" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw"></a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="footerHead_item_flickr">
+                        <h5 class="footerHead_item_title">FLICKR WIDGET</h5>
+                        <div id="flickr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerMid">
+            <div class="wrapper">
+                <div class="news">
+                    <form action="" class="news_form">
+                        <input type="email" class="news_field" required placeholder="Enter email for newsletter">
+                        <button type="submit" class="icon-right-open news_button"></button>
+                    </form>
+                    <div class="news_result"></div>
+                </div>
+
+                <div class="socialButtons">
+                    <a href="#" class="socialButton icon-facebook"></a>
+                    <a href="#" class="socialButton icon-twitter"></a>
+                    <a href="#" class="socialButton icon-gplus"></a>
+                    <a href="#" class="socialButton icon-linkedin"></a>
+                    <a href="#" class="socialButton icon-flickr"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footerEnd">
+            <div class="wrapper">
+                <p class="footerEnd_text">Copyright © Fooseshoes 2013.<br>Designed by EnzoLiVolti. </p>
+                <nav class="footerEnd_nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Faqs</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="../slick/slick.js"></script>
+    <script src="../slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
